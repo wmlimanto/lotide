@@ -25,10 +25,10 @@ const letterPositions = function(sentence) {
 
   for (let position = 0; position < sentence.length; position++) { //loop over all the letters in the sentence 
     if (position !== ' ') { //if there is no ' ', then run the function
-      if (results[sentence[position]]) { //if the position of the letter within the sentence is in the results
-        results[sentence[position]].push(position) //push the position of the letter into results
+      if (results[sentence[position]]) { //does this letter already exist, if it doesn't, then go to the next. if it does, then run the function below 
+        results[sentence[position]].push(position) //push the duplicate value into the array
       } else {
-        results[sentence[position]] = [position] //else just leave it as is
+        results[sentence[position]] = [position] //the value of the sentence[i] = [i], which is the index number
       }
     }
   }
