@@ -18,7 +18,8 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-// FUNCTION IMPLEMENTATION
+//function that helps us easily test functions that return objects
+
 const assertObjectsEqual = function(actual, expected) {
 
   const inspect = require('util').inspect; //util library's inspect function
