@@ -33,6 +33,8 @@ const map = function(array, callback) {
   return results;
 }
 
+module.exports = map;
+
 const results1 = map(words, word => word[0]);
 console.log('map function results: ', results1);
 

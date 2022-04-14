@@ -28,5 +28,7 @@ const countLetters = function(allItems, itemsToCount) {
   return results;
 }
 
+module.exports = countLetters;
+
 countLetters("lighthouse is in the house");
 countLetters("sam has six boxes of shells");

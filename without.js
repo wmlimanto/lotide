@@ -29,6 +29,8 @@ const without = function(array, removeUnwanted) {
   return newArray;
 };
 
+module.exports = without;
+
 console.log(without([1, 2, 3], [1])) // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
 console.log(without([5, 4, 3], [4, 3])) // => [5]
